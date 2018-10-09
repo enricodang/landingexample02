@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Luisaviaroma Langing page</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="dist/app.min.css">
+</head>
+<body>
+	<section class="visual">
+		<div class="container-fluid">
+			<div class="row visual__row">
+				<div class="col-lg-6 col-md-12 py-3 visual__row--headlineWrap">
+					<div>
+						<h2 class="visual__row--headline">Black Friday</h2>
+						<p class="visual__row--text">Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione.</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 visual__box--desktop">
+					<div class="visual__box">
+						<form class="needs-validation">
+							<div>
+								<p class="visual__box--title">Newsletter</p>
+								<p class="visual__box--subtitle">Receive updates on sales and offers directly to you box</p>
+								<label class="visual__box--label">E-mail</label>
+								<input type="text" name="email" class="visual__box--input" placeholder="luca.rossi@gmail.com" required>
+								<div class="custom-control custom-checkbox visual__box--checkboxWrap">
+									<input type="checkbox" class="custom-control-input" id="privacy" required>
+									<label class="custom-control-label" for="privacy">I have read the Policy Privacy and I agree to the processing of my personal data in order to receive commercial communications and promotions by newsletter from LUISAVIAROMA.COM</label>
+								</div>
+					      
+							</div>
+							<div class="visual__box--buttonWrap">
+								<button type="submit" class="btn btn-primary btn-block">SUBSCRIBE</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="col-lg-3 col-md-6 visual__box--desktop">
+					<div class="visual__box webpush">
+						<div>
+							<p class="visual__box--title">Web Push notification</p>
+							<p class="visual__box--subtitle">RBe the first know about special deals.</p>
+						
+							<ul class="visual__boxPush--list">
+								<li>Real time instant notifications</li>
+								<li>No need to fill or download anything</li>
+								<li>Turn off notifications anytime from your browser config</li>
+							</ul>
+						</div>
+						<div class="visual__box--buttonWrap">
+							<button type="submit" class="btn btn-primary btn-block">SUBSCRIBE</button>
+						</div>
+					</div>
+					<div class="visual__box qrcode">
+						<div>
+							<p class="visual__box--title">Download IOS App</p>
+							<p class="visual__box--subtitle">Score thr best Black Friday deals by downloading our app and receiving instant updates on sales, exclusive promotions and limited time offers</p>
+							<center><img src="assets/qr-code-lvr-ios-app-1024x1024.png" width="100"></center>
+						</div>
+						<div>
+							<center><a href="#"><img src="assets/CTA-App-Store.png" width="150"></a></center>
+						</div>				
+					</div>
+				</div>
+				<div class="col-12 visual__box--mobile">
+					<ul class="nav nav-tabs nav-justified" id="visual__tabs" role="tablist">
+					  <li class="nav-item">
+					    <a class="nav-link active" id="newsletter-tab" data-toggle="tab" href="#newsletter" role="tab" aria-controls="home" aria-selected="true"><img src="assets/ico-mail.svg"></a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" id="notification-tab" data-toggle="tab" href="#notification" role="tab" aria-controls="profile" aria-selected="false"><img src="assets/ico-notification.svg"></a>
+					  </li>
+					</ul>
+
+					<div class="tab-content" id="visual__tabsContents">
+					  <div class="tab-pane fade show active" id="newsletter" role="tabpanel" aria-labelledby="newsletter-tab">
+					  	<div class="visual__box">
+								<div>
+									<p class="visual__box--title">Newsletter</p>
+									<p class="visual__box--subtitle">Receive updates on sales and offers directly to you box</p>
+									<label class="visual__box--label">E-mail</label>
+									<input type="text" name="email" class="visual__box--input" placeholder="luca.rossi@gmail.com">
+									<div class="custom-control custom-checkbox visual__box--checkboxWrap">
+										<input type="checkbox" class="custom-control-input" id="privacy">
+										<label class="custom-control-label" for="privacy">I have read the Policy Privacy and I agree to the processing of my personal data in order to receive commercial communications and promotions by newsletter from LUISAVIAROMA.COM</label>
+									</div>
+								</div>
+								<div class="visual__box--buttonWrap">
+									<button type="submit" class="btn btn-primary btn-block">SUBSCRIBE</button>
+								</div>
+							</div>
+					  </div>
+
+					  <div class="tab-pane fade" id="notification" role="tabpanel" aria-labelledby="notification-tab">
+					  	<div class="visual__box webpush">
+								<div>
+									<p class="visual__box--title">Web Push notification</p>
+									<p class="visual__box--subtitle">RBe the first know about special deals.</p>
+								
+									<ul class="visual__boxPush--list">
+										<li>Real time instant notifications</li>
+										<li>No need to fill or download anything</li>
+										<li>Turn off notifications anytime from your browser config</li>
+									</ul>
+								</div>
+								<div class="visual__box--buttonWrap">
+									<button type="submit" class="btn btn-primary btn-block">SUBSCRIBE</button>
+								</div>
+							</div>
+							<div class="visual__box qrcode">
+								<div>
+									<p class="visual__box--title">Download IOS App</p>
+									<p class="visual__box--subtitle">Score thr best Black Friday deals by downloading our app and receiving instant updates on sales, exclusive promotions and limited time offers</p>
+									<center><img src="assets/qr-code-lvr-ios-app-1024x1024.png" width="100"></center>
+								</div>
+								<div>
+									<center><a href="#"><img src="assets/CTA-App-Store.png" width="150"></a></center>
+								</div>				
+							</div>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<section class="theBoxes">
+		<div class="container-fluid">
+			<div class="row theBoxes__row">
+				<div class="col-md-8 theBoxes__title">SHOP WOMAN</div>
+			</div>
+			<div class="row theBoxes__row">
+				<div class="col-md-8 theBoxes__searchBox">
+					<input type="text" name="searchBox" class="global__input" placeholder="Termine da ricercare">
+				</div>
+			</div>
+			<div class="row theBoxes__searchResult">
+			</div>
+		</div>
+	</section>
+<script type="text/javascript" src="dist/vendor.min.js"></script>
+<script type="text/javascript" src="dist/app.min.js"></script>
+</body>
+</html>

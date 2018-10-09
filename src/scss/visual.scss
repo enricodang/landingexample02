@@ -1,0 +1,146 @@
+.visual {
+	width: 100%;
+	height: 100vh;
+	background-color: black;
+	position:relative;
+	overflow: hidden;
+	@include media-breakpoint-down(sm) {
+		height: auto;
+		padding-top: 3rem;
+		padding-bottom: 0;
+	}
+	&:after {
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 50vh;
+		left:50%;
+		top:0;
+		content:'BLACK';
+		font-size: 50vh;
+		text-align: center;
+		color: $theme-white;
+		font-weight: 800;
+		opacity: 0.1;
+		line-height: 100%;
+		transform: translateX(-50vw);
+		z-index: 1;
+	}
+	&:before {
+		display: inline-block;
+		position: absolute;
+		left:-100%;
+		top:50vh;
+		width: 100%;
+		height: 50vh;
+		content:'FRIDAY';
+		font-size: 50vh;
+		text-align: center;
+		color: $theme-white;
+		font-weight: 800;
+		opacity: 0.1;
+		line-height: 100%;
+		transform-origin: 50% 50%;
+		transform: translateX(50vw);
+		z-index: 1;
+	}
+	.container-fluid {
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		z-index: 2;
+		@include media-breakpoint-down(sm) {
+			height: auto;
+		}
+	}
+	&__row {
+		height: auto;
+		z-index: 2;
+		&--headlineWrap {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			}
+		&--headline {
+			font-size: 40px;
+			color: $theme-white;
+		}
+		&--text {
+			color: $theme-white;
+		}
+	}
+	&__box {
+		width: 90%;
+		height: 100%;
+		background-color: $theme-white;
+		padding: 1.5rem;
+		font-size: 0.8rem;
+		display: flex;
+		flex-direction: column;
+		justify-content:space-between;
+		margin-left:5%;
+		@include media-breakpoint-down(md) {
+			width: 100%;
+			margin-left:0;
+		}
+		&--title {
+			font-size: 1rem;
+			font-weight: 700;
+			text-align: center;
+		}
+		&--subtitle {
+			font-size: 0.8rem;
+			font-weight: 400;
+		}
+		&--label {
+			font-size: 0.6rem;
+			color: gray;
+			margin:0;
+		}
+		&--input {
+			width: 100%;
+			border: 0;
+			border-bottom: 2px solid black;
+		}
+		&--checkboxWrap {
+			margin-top: 1.5rem;
+			label {
+				font-size: 0.6rem;
+				color: gray;
+			}
+			.custom-control-label::before {
+				border-radius: 0 !important;
+				border:1px solid black;
+				background-color: transparent;
+			}
+		}
+		&--buttonWrap {
+			margin-top: 1.5rem;
+			text-align: center;
+		}
+		&--desktop {
+			@include media-breakpoint-down(sm) {
+				display: none;
+			}
+		}
+		&--mobile {
+			.nav-link {
+			    background-color: gray;
+			    &:hover {
+			    	border-color: transparent;
+			    }
+			}
+			@include media-breakpoint-up(md) {
+				display: none !important;
+			}
+		}
+		&.qrcode {
+			display:none;
+		}
+		ul {
+			margin:0;
+			padding:0;
+			list-style: inside;
+		}
+	}
+}
