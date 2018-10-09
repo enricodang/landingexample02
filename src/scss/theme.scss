@@ -1,0 +1,20 @@
+// vendors //
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+@import "node_modules/slick-carousel/slick/slick.scss";
+@import "node_modules/slick-carousel/slick/slick-theme.scss";
+// theme //
+@import "_variables.scss";
+@import "_bootstrap-override.scss";
+@import "visual.scss";
+@import "theboxes.scss";
+
+body  {
+	font-family: 'Open Sans', Serif;
+}
+.global {
+	&__input {
+		width: 100%;
+		border: 0;
+		border-bottom: 2px solid black;
+	}
+}
